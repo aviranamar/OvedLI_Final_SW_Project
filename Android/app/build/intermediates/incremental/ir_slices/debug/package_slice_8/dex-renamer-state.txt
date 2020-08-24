@@ -1,0 +1,4 @@
+#Wed May 15 18:12:04 IDT 2019
+base.0=C\:\\mahat\\OvedLi\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\8
+path.0=classes.dex
+renamed.0=classes.dex

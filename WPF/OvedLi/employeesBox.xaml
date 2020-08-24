@@ -1,0 +1,33 @@
+﻿<Window x:Class="OvedLi.employeesBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OvedLi"
+        mc:Ignorable="d"
+        Title="employeesBox" Height="420.851" Width="359.574" AllowsTransparency="True" WindowStyle="None">
+    <Window.Background>
+        <ImageBrush ImageSource="pack://application:,,,/OvedLi;component/Resources/background.jpg" />
+    </Window.Background>
+    <Grid>
+        <Label x:Name="fnamelbl" Content="שם פרטי" HorizontalAlignment="Left" Margin="232,30,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="fnametb" HorizontalAlignment="Left" Height="23" Margin="95,34,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lnamelbl" Content="שם משפחה" HorizontalAlignment="Left" Margin="232,70,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="lnametb" HorizontalAlignment="Left" Height="23" Margin="95,74,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="idlbl" Content="מספר זהות " HorizontalAlignment="Left" Margin="232,114,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="idtb" HorizontalAlignment="Left" Height="23" Margin="95,114,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="adresslbl" Content="כתובת" HorizontalAlignment="Left" Margin="231,152,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="adresstb" HorizontalAlignment="Left" Height="23" Margin="94,152,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="phonelbl" Content="טלפון" HorizontalAlignment="Left" Margin="231,183,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="phonetb" HorizontalAlignment="Left" Height="23" Margin="94,187,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="passwordlbl" Content="סיסמה" HorizontalAlignment="Left" Margin="231,226,0,0" VerticalAlignment="Top"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="94,234,0,0" VerticalAlignment="Top" Width="120" PasswordChar="*"/>
+        <Button x:Name="okbtn" Click="okbtn_Click" HorizontalAlignment="Left" Margin="28,280,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.535,-0.033" Background="{x:Null}" BorderBrush="{x:Null}">
+            <Image Source="pack://application:,,,/OvedLi;component/Resources/v.png" Height="64" Width="43"/>
+        </Button>
+        <Button x:Name="cancelbtn" Click="cancelbtn_Click" HorizontalAlignment="Left" Margin="227,281,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.535,-0.033" Background="{x:Null}" BorderBrush="{x:Null}">
+            <Image Source="pack://application:,,,/OvedLi;component/Resources/x.png" Height="64" Width="43"/>
+        </Button>
+
+    </Grid>
+</Window>

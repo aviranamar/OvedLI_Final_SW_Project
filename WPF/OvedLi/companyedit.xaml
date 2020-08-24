@@ -1,0 +1,31 @@
+﻿<Window x:Class="OvedLi.companyedit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OvedLi"
+        mc:Ignorable="d"
+        Title="companyedit" Height="337.234" Width="301.064"  AllowsTransparency="True" WindowStyle="None">
+    <Window.Background>
+        <ImageBrush ImageSource="pack://application:,,,/OvedLi;component/Resources/background.jpg" />
+    </Window.Background>
+    <Grid>
+        <TextBox x:Name="companynametb" HorizontalAlignment="Left" Height="23" Margin="84,74,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="companylogotbt" HorizontalAlignment="Left" Height="23" Margin="84,115,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="okbtn" Click="okbtn_Click" HorizontalAlignment="Left" Margin="35,247,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.535,-0.033" Background="{x:Null}" BorderBrush="{x:Null}">
+            <Image Source="pack://application:,,,/OvedLi;component/Resources/v.png" Height="64" Width="43"/>
+        </Button>
+        <Button x:Name="cancelbtn" Click="cancelbtn_Click" HorizontalAlignment="Left" Margin="167,247,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.535,-0.033" Background="{x:Null}" BorderBrush="{x:Null}">
+            <Image Source="pack://application:,,,/OvedLi;component/Resources/x.png" Height="64" Width="43"/>
+        </Button>
+        <Button x:Name="deletebtn" Click="deletebtn_Click" HorizontalAlignment="Left" Margin="98,203,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.535,-0.033" Background="{x:Null}" BorderBrush="{x:Null}">
+            <Image Source="pack://application:,,,/OvedLi;component/Resources/del.png" Height="64" Width="43"/>
+        </Button>
+        <Image x:Name="imagelogo" HorizontalAlignment="Left" Height="39" Margin="120,10,0,0" VerticalAlignment="Top" Width="43"/>
+        <Label x:Name="label" Content="שם החברה" HorizontalAlignment="Left" Margin="215,74,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy" Content="לוגו" HorizontalAlignment="Left" Margin="224,120,0,0" VerticalAlignment="Top"/>
+
+
+
+    </Grid>
+</Window>

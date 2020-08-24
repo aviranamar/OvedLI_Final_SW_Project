@@ -1,0 +1,26 @@
+﻿<Window x:Class="OvedLi.mangeComnyUsers"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OvedLi"
+        mc:Ignorable="d"
+        Title="ניהול משמשים" Height="300" Width="300"
+        Icon="pack://application:,,,/OvedLi;component/Resources/users.ico" AllowsTransparency="True" WindowStyle="None">
+    <Window.Background>
+        <ImageBrush ImageSource="pack://application:,,,/OvedLi;component/Resources/background.jpg" />
+    </Window.Background>
+    <Grid>
+        <Button x:Name="okbtn" Click="okbtn_Click" HorizontalAlignment="Left" Margin="28,206,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.535,-0.033" Background="{x:Null}" BorderBrush="{x:Null}">
+            <Image Source="pack://application:,,,/OvedLi;component/Resources/v.png" Height="64" Width="43"/>
+        </Button>
+        <Button x:Name="cancelbtn" Click="cancelbtn_Click" HorizontalAlignment="Left" Margin="208,215,0,0" VerticalAlignment="Top" Width="64" RenderTransformOrigin="-0.535,-0.033" Background="{x:Null}" BorderBrush="{x:Null}" Height="42">
+            <Image Source="pack://application:,,,/OvedLi;component/Resources/x.png" Height="42" Width="43"/>
+        </Button>
+        <Button x:Name="adduser" Click="adduser_Click" HorizontalAlignment="Left" Margin="122,215,0,0" VerticalAlignment="Top" Width="64" RenderTransformOrigin="-0.535,-0.033" Background="{x:Null}" BorderBrush="{x:Null}" Height="42">
+            <Image Source="pack://application:,,,/OvedLi;component/Resources/employee_add.png" Height="42" Width="43"/>
+        </Button>
+        <Label x:Name="adduserlbl" Content="הוסף משתמש" HorizontalAlignment="Left" Margin="112,171,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.392,0.651"/>
+        <ComboBox x:Name="generalcb" HorizontalAlignment="Left" Margin="78,58,0,0" VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Window>

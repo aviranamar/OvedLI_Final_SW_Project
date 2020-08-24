@@ -1,0 +1,47 @@
+﻿<Window x:Class="OvedLi.editCallWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OvedLi"
+        mc:Ignorable="d"
+        Title="ערוך קריאה מספר" Height="520.857" Width="300" AllowsTransparency="True" WindowStyle="None">
+    <Window.Background>
+        <ImageBrush ImageSource="pack://application:,,,/OvedLi;component/Resources/background.jpg" />
+    </Window.Background>
+
+    <Grid>
+        <TextBox x:Name="openDateTB" HorizontalAlignment="Left" Height="23" Margin="32,121,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <Label x:Name="openDateLbl" Content="תאריך פתיחה" HorizontalAlignment="Left" Margin="176,121,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="arrivedateTB" HorizontalAlignment="Left" Height="23" Margin="32,166,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="arrivedateLbl" Content="זמן הגעה" HorizontalAlignment="Left" Margin="200,166,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="desLBL" Content="תיאור הבעיה" HorizontalAlignment="Left" Margin="182,209,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="desLBLans" Content="" HorizontalAlignment="Left" Margin="56,209,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="emaillbl" Content="אימייל" HorizontalAlignment="Left" Margin="215,240,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="emailtb" HorizontalAlignment="Left" Height="23" Margin="32,243,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="fullnamelbl" Content="שם מלא" HorizontalAlignment="Left" Margin="215,283,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="fullnameTB" HorizontalAlignment="Left" Height="23" Margin="32,286,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="adesslbl" Content="כתובת" HorizontalAlignment="Left" Margin="224,329,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="adressTB" HorizontalAlignment="Left" Height="23" Margin="32,324,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="call_edit_ok" Click="call_edit_ok_Click" HorizontalAlignment="Left" Margin="32,408,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.535,-0.033" Background="{x:Null}" BorderBrush="{x:Null}">
+            <Image Source="pack://application:,,,/OvedLi;component/Resources/v.png" Height="64" Width="43"/>
+        </Button>
+        <Button x:Name="call_edit_cancel" Click="call_edit_cancel_Click" HorizontalAlignment="Left" Margin="193,408,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.535,-0.033" Background="{x:Null}" BorderBrush="{x:Null}">
+            <Image Source="pack://application:,,,/OvedLi;component/Resources/x.png" Height="64" Width="43"/>
+        </Button>
+        <Button x:Name="change_manul_employee" Click="change_manul_employee_Click" HorizontalAlignment="Left" Margin="32,17,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.535,-0.033" Background="{x:Null}" BorderBrush="{x:Null}">
+            <Image Source="pack://application:,,,/OvedLi;component/Resources/swap-user.png" Height="64" Width="43"/>
+        </Button>
+        <Button x:Name="change_auto_employee" Click="change_auto_employee_Click" HorizontalAlignment="Left" Margin="183,17,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.535,-0.033" Background="{x:Null}" BorderBrush="{x:Null}">
+            <Image Source="pack://application:,,,/OvedLi;component/Resources/Switch_User.png" Height="64" Width="43"/>
+        </Button>
+        <Label x:Name="change_user_man_lbl" Content="בחר טכנאי אחר" HorizontalAlignment="Left" Margin="32,87,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="change_user_auto_lbl" Content="בחר טכנאי אוטומטי" HorizontalAlignment="Left" Margin="172,87,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="techlbl" Content="טכנאי " HorizontalAlignment="Left" Margin="224,360,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="techlblcontent" Content="Label" HorizontalAlignment="Left" Margin="85,360,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="finishme" Click="finishme_Click" HorizontalAlignment="Left" Margin="112,408,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.535,-0.033" Background="{x:Null}" BorderBrush="{x:Null}">
+            <Image Source="pack://application:,,,/OvedLi;component/Resources/flag.png" Height="64" Width="43"/>
+        </Button>
+        <Label x:Name="label" Content="סיים" HorizontalAlignment="Left" Margin="132,390,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

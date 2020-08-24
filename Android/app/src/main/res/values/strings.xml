@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">OvedLi</string>
+    <string name="title_activity_call_list">CallListActivity</string>
+</resources>

@@ -1,0 +1,89 @@
+﻿<Window x:Class="OvedLi.compnaymanage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OvedLi"
+        mc:Ignorable="d"
+        Title="compnaymanage" Height="439.362" Width="626.596"
+        Icon="pack://application:,,,/OvedLi;component/Resources/users.ico">
+    <Window.Background>
+        <ImageBrush ImageSource="pack://application:,,,/OvedLi;component/Resources/background.jpg" />
+    </Window.Background>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Image Grid.Column="1" Grid.Row="0" x:Name="logoimg" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Source = "pack://application:,,,/OvedLi;component/Resources/logo_transparent.png"/>
+        <Button  Grid.Column="0" Grid.Row="0" x:Name="picturereplace" Click="picturereplace_Click"  HorizontalAlignment="Left" Margin="42,61,0,0" VerticalAlignment="Top" Width="153" RenderTransformOrigin="-0.535,-0.033" Background="{x:Null}" BorderBrush="{x:Null}" Height="99">
+            <Image  x:Name="comlogo" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" />
+        </Button>
+        <Button  Grid.Column="2" Grid.Row="1" x:Name="addservicebtn" Click="addservicebtn_Click"  HorizontalAlignment="Left"  VerticalAlignment="Top" Width="49" RenderTransformOrigin="-0.535,-0.033" Background="{x:Null}" BorderBrush="{x:Null}" Height="43" Margin="55,32,0,0">
+            <Image  x:Name="addserviceimg" HorizontalAlignment="Left" Height="43"  VerticalAlignment="Top" Width="49" Source = "pack://application:,,,/OvedLi;component/Resources/service-add.png"/>
+        </Button>
+        <Label Grid.Column="2" x:Name="addservicelbl" Content="הוסף שירות" HorizontalAlignment="Left" Margin="44,6,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <Button  Grid.Column="1" Grid.Row="1" x:Name="editselectservice" Click="editselectservice_Click"  HorizontalAlignment="Left"  VerticalAlignment="Top" Width="49" RenderTransformOrigin="-0.535,-0.033" Background="{x:Null}" BorderBrush="{x:Null}" Height="43" Margin="55,32,0,0">
+            <Image  x:Name="editselectserviceimg" HorizontalAlignment="Left" Height="43"  VerticalAlignment="Top" Width="49" Source = "pack://application:,,,/OvedLi;component/Resources/edit-service.png"/>
+        </Button>
+        <Label Grid.Column="1" x:Name="editselectservicelbl" Content="ערוך שירות" HorizontalAlignment="Left" Margin="44,6,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <!---->
+        <Button  Grid.Column="0" Grid.Row="1" x:Name="addemployeebtn" Click="addemployeebtn_Click"  HorizontalAlignment="Left"  VerticalAlignment="Top" Width="49" RenderTransformOrigin="-0.535,-0.033" Background="{x:Null}" BorderBrush="{x:Null}" Height="43" Margin="55,32,0,0">
+            <Image  x:Name="addemploeeimg" HorizontalAlignment="Left" Height="43"  VerticalAlignment="Top" Width="49" Source = "pack://application:,,,/OvedLi;component/Resources/employee_add.png"/>
+        </Button>
+
+       <Label Grid.Column="0" x:Name="addemployeelbl" Content=" הוסף עובד" HorizontalAlignment="Left" Margin="44,6,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        
+        
+        
+        
+   
+        <Button  Grid.Column="2" Grid.Row="2" x:Name="employeesselectbtn" Click="employeesselectbtn_Click"  HorizontalAlignment="Left"  VerticalAlignment="Top" Width="49" RenderTransformOrigin="-0.535,-0.033" Background="{x:Null}" BorderBrush="{x:Null}" Height="43" Margin="55,32,0,0">
+            <Image  x:Name="employeesselectimg" HorizontalAlignment="Left" Height="43"  VerticalAlignment="Top" Width="49" Source = "pack://application:,,,/OvedLi;component/Resources/edit_employee.png"/>
+        </Button>
+
+       <Label Grid.Column="2" x:Name="employeesselectbtnlbl" Content="בחר עובד" HorizontalAlignment="Left" Margin="44,6,0,0" VerticalAlignment="Top" Grid.Row="2"/>
+        
+                <Button  Grid.Column="1" Grid.Row="2" x:Name="callsbtn" Click="callsbtn_Click"  HorizontalAlignment="Left"  VerticalAlignment="Top" Width="49" RenderTransformOrigin="-0.535,-0.033" Background="{x:Null}" BorderBrush="{x:Null}" Height="43" Margin="55,32,0,0">
+            <Image  x:Name="callsimg" HorizontalAlignment="Left" Height="33"  VerticalAlignment="Top" Width="49" Source = "pack://application:,,,/OvedLi;component/Resources/calls.png"/>
+        </Button>
+
+       <Label Grid.Column="1" x:Name="callslbl" Content="קריאות" HorizontalAlignment="Left" Margin="65,6,0,0" VerticalAlignment="Top" Grid.Row="2"/>
+        
+
+        <Button  Grid.Column="0" Grid.Row="3" x:Name="users" Click="users_Click"  HorizontalAlignment="Left"  VerticalAlignment="Top" Width="49" RenderTransformOrigin="-0.535,-0.033" Background="{x:Null}" BorderBrush="{x:Null}" Height="43" Margin="55,32,0,0">
+            <Image  x:Name="usersimg" HorizontalAlignment="Left" Height="43"  VerticalAlignment="Top" Width="49" Source = "pack://application:,,,/OvedLi;component/Resources/edit-user.png"/>
+        </Button>
+
+        <Label Grid.Column="0" x:Name="userslbl" Content="ניהול משתמשים" HorizontalAlignment="Left" Margin="42,6,0,0" VerticalAlignment="Top" Grid.Row="2"/>
+<!--test-->
+        <Button  Grid.Column="2" Grid.Row="0" x:Name="disconnect" Click="disconnect_Click"  HorizontalAlignment="Left"  VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.535,-0.033" Background="{x:Null}" BorderBrush="{x:Null}" Height="49" Margin="29,32,0,0">
+            <Image  x:Name="disconnectimg" HorizontalAlignment="Left" Height="43"  VerticalAlignment="Top" Width="49" Source = "pack://application:,,,/OvedLi;component/Resources/Connect.png"/>
+        </Button>
+
+        <Label Grid.Column="2" x:Name="disconectlbl" Content="התנתק" HorizontalAlignment="Left" Margin="56,6,0,0" VerticalAlignment="Top" Grid.Row="0"/>
+        <Label x:Name="employeedes" Content="כמות עובדים" Grid.Column="2" HorizontalAlignment="Left" Margin="123,95,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="employstslbl" Content="" Grid.Column="2" HorizontalAlignment="Left" Margin="41,95,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="usersdes" Content="כמות משתמשים" Grid.Column="2" HorizontalAlignment="Left" Margin="104,121,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="usersstslbl" Content="" Grid.Column="2" HorizontalAlignment="Left" Margin="41,121,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="totalcalldes" Content="כמות קריאות" Grid.Column="2" HorizontalAlignment="Left" Margin="120,144,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="totalcallstslbl" Content="" Grid.Column="2" HorizontalAlignment="Left" Margin="44,144,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="opencalldes" Content="קריאות פתוחות" Grid.Column="2" HorizontalAlignment="Left" Margin="113,170,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="opencallstslbl" Content="" Grid.Column="2" HorizontalAlignment="Left" Margin="44,170,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="closedcalldes" Content="קריאות סגורות" Grid.Column="2" HorizontalAlignment="Left" Margin="113,196,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="closedcallstslbl" Content="" Grid.Column="2" HorizontalAlignment="Left" Margin="44,196,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="erencalldes" Content="רווחים" Grid.Column="1" HorizontalAlignment="Left" Margin="137,95,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="erencallstslbl" Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="90,95,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="servicesdes" Content="כמות שירותים" Grid.Column="1" HorizontalAlignment="Left" Margin="105,121,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="servicestslbl" Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="90,121,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="statstitle" Content="סטטיסטיקה" Grid.Column="2" HorizontalAlignment="Left" Margin="120,55,0,0" VerticalAlignment="Top"/>
+        <Image Grid.Column="1" Grid.Row="0" x:Name="loadtimeclock" HorizontalAlignment="Left" Height="75"  VerticalAlignment="Top" Width="84" Source = "pack://application:,,,/OvedLi;component/Resources/sendClock.gif" Margin="105,160,0,0" RenderTransformOrigin="1.483,0.831"/>
+    </Grid>
+</Window>

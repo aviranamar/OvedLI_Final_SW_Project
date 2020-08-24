@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "157723943182",
+    "firebase_url": "https://ana10project.firebaseio.com",
+    "project_id": "ana10project",
+    "storage_bucket": "ana10project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:157723943182:android:3515ff2bd0c6a3de",
+        "android_client_info": {
+          "package_name": "avishayandaviran.ovedli"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "157723943182-vog8q1vnl0nmjc3n5d4vimh291kf5tb8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "avishayandaviran.ovedli",
+            "certificate_hash": "694c9e56df8813e476af98371b2373e1936ffc8c"
+          }
+        },
+        {
+          "client_id": "157723943182-ftprr6hrk9sl06754jotmv85dvc3d5cq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOfWWxlxwYH-BSAhaNKsvSR9X03T3QF1I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "157723943182-ftprr6hrk9sl06754jotmv85dvc3d5cq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

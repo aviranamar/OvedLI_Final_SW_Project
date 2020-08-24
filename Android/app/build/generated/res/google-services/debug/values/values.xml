@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">157723943182-ftprr6hrk9sl06754jotmv85dvc3d5cq.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://ana10project.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">157723943182</string>
+    <string name="google_api_key" translatable="false">AIzaSyCOfWWxlxwYH-BSAhaNKsvSR9X03T3QF1I</string>
+    <string name="google_app_id" translatable="false">1:157723943182:android:3515ff2bd0c6a3de</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCOfWWxlxwYH-BSAhaNKsvSR9X03T3QF1I</string>
+    <string name="google_storage_bucket" translatable="false">ana10project.appspot.com</string>
+    <string name="project_id" translatable="false">ana10project</string>
+</resources>

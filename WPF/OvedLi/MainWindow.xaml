@@ -1,0 +1,31 @@
+﻿<Window x:Class="OvedLi.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OvedLi"
+        mc:Ignorable="d"
+        Title="עובד לי מערכת ניהול" Height="691.646" Width="1179.58"
+        Icon="pack://application:,,,/OvedLi;component/Resources/users.ico">
+    <Window.Background>
+        <ImageBrush ImageSource="pack://application:,,,/OvedLi;component/Resources/background.jpg" />
+    </Window.Background>
+
+
+    <Grid >
+        <TextBox x:Name="usernameTB" HorizontalAlignment="Left" Height="23" Margin="538,163,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="265"/>
+        <PasswordBox  x:Name="passwordTB" HorizontalAlignment="Left" Height="23" Margin="538,276,0,0"  PasswordChar="*"   VerticalAlignment="Top" Width="265"/>
+        <Label x:Name="usernamelbl" Content="שם משתמש" HorizontalAlignment="Left" Margin="651,132,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="passwordlbl" Content="סיסמא" HorizontalAlignment="Left" Margin="681,229,0,0" VerticalAlignment="Top"/>
+        <Image x:Name="logoimg" HorizontalAlignment="Left" Height="100" Margin="626,27,0,0" VerticalAlignment="Top" Width="100" Source = "pack://application:,,,/OvedLi;component/Resources/logo_transparent.png"/>
+        <Button x:Name="loginbtn"   Click="loginbtnonclick" Margin="538,384,546,186" Background="{x:Null}" BorderBrush="{x:Null}">
+            <Image Source="pack://application:,,,/OvedLi;component/Resources/Connect.png" Height="64" Width="43"/>
+        </Button>
+
+        <Image Grid.Column="1" Grid.Row="0" x:Name="loadtimeclock" HorizontalAlignment="Left" Height="75"  VerticalAlignment="Top" Width="84" Source = "pack://application:,,,/OvedLi;component/Resources/sendClock.gif" Margin="105,160,0,0" RenderTransformOrigin="1.483,0.831"/>
+
+
+
+
+    </Grid>
+</Window>
